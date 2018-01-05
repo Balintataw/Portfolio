@@ -30,7 +30,7 @@ section {
 }
 
 .navbar-inverse {
-  background-color: #8e4646;
+  background-color: #597896;
 }
 
           /* navbar text override */
@@ -42,9 +42,9 @@ section {
   color: #f1eeee;
 }
 
-.navbar-brand::first-letter {
+.navbar-inverse .navbar-brand::first-letter {
   color: #800003;
-  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 /* Jumbotron */
@@ -60,6 +60,7 @@ section {
 
 .jumbotron h1::first-letter {
   color: #800003;
+  font-size: 4rem;
 }
 
 .btn {
@@ -98,7 +99,7 @@ h3 {
 /* Footer */
 
 footer {
-  background: #8e4646;
+  background: #597896;
   color: #f1eeee;
   padding: .6em;
 }
