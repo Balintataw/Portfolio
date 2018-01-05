@@ -1,5 +1,6 @@
 body, html {
   font-size: 18px;
+  font-family: 'Rubik', sans-serif;
 }
 
 a {
@@ -28,6 +29,24 @@ section {
   margin-bottom: 0;
 }
 
+.navbar-inverse {
+  background-color: #8e4646;
+}
+
+          /* navbar text override */
+.navbar-inverse .navbar-brand {
+  font-size: 1.3rem;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
+  color: #f1eeee;
+}
+
+.navbar-brand::first-letter {
+  color: #800003;
+  font-weight: bold;
+}
+
 /* Jumbotron */
 
 .jumbotron {
@@ -37,6 +56,10 @@ section {
 .jumbotron p {
   font-style: italic;
   margin-bottom: 0;
+}
+
+.jumbotron h1::first-letter {
+  color: #800003;
 }
 
 .btn {
@@ -75,7 +98,7 @@ h3 {
 /* Footer */
 
 footer {
-  background: black;
-  color: lightgray;
+  background: #8e4646;
+  color: #f1eeee;
   padding: .6em;
 }
