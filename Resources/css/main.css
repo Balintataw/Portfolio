@@ -31,6 +31,7 @@ section {
 
 .navbar-inverse {
   background-color: #597896;
+  background: linear-gradient(45deg, #597896, #333333);
 }
 
           /* navbar text override */
@@ -50,7 +51,29 @@ section {
 /* Jumbotron */
 
 .jumbotron {
+  position: relative;
   margin: 0;
+}
+
+.banner-image:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("../../Resources/images/Jumbo-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
+  z-index: 1;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-text {
+  position: relative;
+  z-index: 2;
 }
 
 .jumbotron p {
@@ -64,13 +87,26 @@ section {
 }
 
 .btn {
-  background-color: darkorange;
+  background-color: #597896;
   font-style: normal;
   font-weight: bolder;
   letter-spacing: 2px;
+  -webkit-box-shadow: 4px 4px 5px #333333;
+     -mox-box-shadow: 4px 4px 5px #333333;
+          box-shadow: 4px 4px 5px #333333;
+}
+
+.btn:focus {
+  -webkit-box-shadow: inset 2px 2px 5px #333333;
+     -mox-box-shadow: inset 2px 2px 5px #333333;
+          box-shadow: inset 2px 2px 5px #333333;
 }
 
 /* Skills Section */
+
+#skills {
+  background: linear-gradient(45deg, #EEE, #919191);
+}
 
 h3 {
   font-weight: bold;
@@ -79,15 +115,13 @@ h3 {
 /* Portfolio Section */
 
 #portfolio {
-  background-color: #eee;
-}
-
-.inProgress {
-  text-decoration: line-through;
+  background-color: #EEE;
+  /*background: linear-gradient(90deg, #eee, rgba(128, 0, 3, 0.9));*/
 }
 
 .row img {
   margin: 20px 0;
+  box-shadow: 5px 5px 5px #333333;
 }
 
 /*Contact Section*/
@@ -99,7 +133,7 @@ h3 {
 /* Footer */
 
 footer {
-  background: #597896;
+  background: linear-gradient(90deg, #597896, #333333);
   color: #f1eeee;
   padding: .6em;
 }
