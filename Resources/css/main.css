@@ -9,18 +9,23 @@ a {
 
 /* Uncomment this block of code below to see the page layout divided into sections and divs as rectangles */
 
-/*
-div, section {
+
+/* div, section {
   border: 1px solid black;
-}
-*/
+} */
+
 
 h1 {
   padding: 30px;
 }
 
+h3 {
+  font-weight: bold;
+}
+
 section {
-    padding: 0 3em 3em 3em;
+    padding: 1.5em 3em 1.5em 3em;
+    border-bottom: 1px solid #800003;
 }
 
 /* Navbar */
@@ -105,23 +110,24 @@ section {
 /* Skills Section */
 
 #skills {
-  background: linear-gradient(45deg, #EEE, #919191);
-}
-
-h3 {
-  font-weight: bold;
+  background: linear-gradient(to top, #EEE, #919191);
 }
 
 /* Portfolio Section */
 
 #portfolio {
-  background-color: #EEE;
-  /*background: linear-gradient(90deg, #eee, rgba(128, 0, 3, 0.9));*/
+  background: linear-gradient(to top, #FFF, #EEE);
 }
 
-.row img {
-  margin: 20px 0;
+.cert-row img, .project img {
+  /* margin: 20px 0; */
   box-shadow: 5px 5px 5px #333333;
+}
+
+/* certifications Section */
+
+#certs {
+  background: linear-gradient(to top, #FFF, #919191);
 }
 
 /*Contact Section*/
@@ -130,7 +136,47 @@ h3 {
   padding: 1em;
 }
 
-/* Footer */
+/* About Section */
+
+#about {
+  
+}
+
+.bio-container {
+  position: relative;
+}
+
+.bio-container:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("../../Resources/images/about-background1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  z-index: 1;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+}
+
+.bio-text-container, .bio-text a{
+  display: flex;
+  height: 100%;
+  position: relative;
+  z-index: 50;
+  color: #F1EEEE;
+}
+
+.bio-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Footer Section */
 
 footer {
   background: linear-gradient(90deg, #597896, #333333);
