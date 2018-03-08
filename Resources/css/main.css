@@ -158,27 +158,27 @@ section {
   background-position: center;
   background-size: 100% 100%;
   z-index: 1;
-  opacity: 0.5;
+  opacity: 0.6;
   width: 100%;
   height: 100%;
 }
 
 .bio-text-container, .bio-text a{
-
-  height: 100%;
-  position: relative;
-  z-index: 50;
-  color: #F1EEEE;
-
+  /* position: relative;
+  display: block;
+  height: 100%; */
+  /* z-index: 51; */
+  color: #FFF;
+  opacity: 1.0;
 }
 
-/* .bio-text {
+.bio-text, p.bio-text {
   display: flex;
   position: relative;
   flex-direction: column;
   z-index: 50;
-
-} */
+  color: #F1EEEE;
+}
 
 /* Footer Section */
 
