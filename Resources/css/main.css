@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body, html {
   font-size: 18px;
   font-family: 'Rubik', sans-serif;
@@ -187,3 +188,194 @@ footer {
   color: #f1eeee;
   padding: .6em;
 }
+=======
+body, html {
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+}
+
+a {
+  color: black;
+}
+
+/* Uncomment this block of code below to see the page layout divided into sections and divs as rectangles */
+
+
+/* div, section {
+  border: 1px solid black;
+} */
+
+
+h1 {
+  padding: 30px;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+section {
+    padding: 1.5em 3em 1.5em 3em;
+    border-bottom: 1px solid #800003;
+}
+
+/* Navbar */
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-inverse {
+  background-color: #597896;
+  background: linear-gradient(45deg, #597896, #333333);
+}
+
+          /* navbar text override */
+.navbar-inverse .navbar-brand {
+  font-size: 1.3rem;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
+  color: #f1eeee;
+}
+
+.navbar-inverse .navbar-brand::first-letter {
+  color: #800003;
+  font-size: 1.5rem;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+  position: relative;
+  margin: 0;
+}
+
+.banner-image:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("../../Resources/images/Jumbo-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
+  z-index: 1;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-text {
+  position: relative;
+  z-index: 2;
+}
+
+.jumbotron p {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.jumbotron h1::first-letter {
+  color: #800003;
+  font-size: 4rem;
+}
+
+.btn {
+  background-color: #597896;
+  font-style: normal;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  -webkit-box-shadow: 4px 4px 5px #333333;
+     -mox-box-shadow: 4px 4px 5px #333333;
+          box-shadow: 4px 4px 5px #333333;
+}
+
+.btn:focus {
+  -webkit-box-shadow: inset 2px 2px 5px #333333;
+     -mox-box-shadow: inset 2px 2px 5px #333333;
+          box-shadow: inset 2px 2px 5px #333333;
+}
+
+/* Skills Section */
+
+#skills {
+  background: linear-gradient(to top, #EEE, #919191);
+}
+
+/* Portfolio Section */
+
+#portfolio {
+  background: linear-gradient(to top, #FFF, #EEE);
+}
+
+.cert-row img, .project img {
+  /* margin: 20px 0; */
+  box-shadow: 5px 5px 5px #333333;
+}
+
+/* certifications Section */
+
+#certs {
+  background: linear-gradient(to top, #FFF, #919191);
+}
+
+/*Contact Section*/
+
+.contact {
+  padding: 1em;
+}
+
+/* About Section */
+
+#about {
+
+}
+
+.bio-container {
+  position: relative;
+  /* flex-basis: 100%; */
+}
+
+.bio-container:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("../../Resources/images/about-background1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  z-index: 1;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+}
+
+.bio-text-container, .bio-text a{
+  /* position: relative;
+  display: block;
+  height: 100%; */
+  /* z-index: 51; */
+  color: #FFF;
+  opacity: 1.0;
+}
+
+.bio-text, p.bio-text {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  z-index: 50;
+  color: #F1EEEE;
+}
+
+/* Footer Section */
+
+footer {
+  background: linear-gradient(90deg, #597896, #333333);
+  color: #f1eeee;
+  padding: .6em;
+}
+>>>>>>> 2268ebe8d4f43d7f5bd44806a3c3b8846bc63ef6
